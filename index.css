@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-size: 20px; 
 
@@ -5,32 +10,120 @@ body{
 
 h1{
     font-size:250%; 
-    color: white;
 }
 
 article{
     width:1000px;
-    background-image: url("Nxt3.png" );
-    background-position: center;
     width: 100%;
     
 }
-article img{
+article img{ 
     width:40%;
 }
-p{
+
+.entre{
+    background-image: url(MMLF-scaled-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    top: 150%;
+    left: 50%;
+    transform: translate(-150%, 0.1%);
+    text-align: center;
     color: white;
+    width: 33.333%;
+}
+.entre h1{
+    padding: 50%, 60%;
+    text-shadow: -1px 1px 2px #000,
+                1px 2px 6px #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+    font-family: 'Instrument Serif', serif;
+}
+.entre p{
+    text-shadow: -1px 1px 2px #000,
+                1px 2px 6px #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+    font-family: 'Instrument Serif', serif;
+}
+.more_info{
+    background-image: url(630cd022c08dc57f480c5abd_Minimal\ Collective\ Nxt\ Museum\ Ivkovic\ Willikens\ ADE\ 2020.webp);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    top: 75%;
+    left: 33.333%;
+    transform: translate(0, -100%);
+    text-align: center;
+    color: azure;
+    width: 33.333%;
+}
+.more_info h1{
+    padding: 50%, 60%;
+    text-shadow: -1px 1px 2px #000,
+                1px 2px 6px #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+    font-family: 'Instrument Serif', serif;
+}
+.more_info p{
+    text-shadow: -1px 1px 2px #000,
+                1px 2px 6px #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+    font-family: 'Instrument Serif', serif;
 }
 
+.history{
+    background-image: url(3.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    top: 75%;
+    left: 66.666%;
+    transform: translate(0, -200%);
+    text-align: center;
+    color: azure;
+    width: 33.333%;
+}
+.history h1{
+    padding: 50%, 60%;
+    text-shadow: -1px 1px 2px #000,
+                1px 2px 6px #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+    font-family: 'Instrument Serif', serif;
+}
+.history p{
+    text-shadow: -1px 1px 2px #000,
+                1px 2px 6px #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+    font-family: 'Instrument Serif', serif;
+}
+.hide{
+    display: none;
+}
+
+a h1{
+    display: inline-block;
+    text-decoration: none;
+    color: azure;
+}
 
 
 
 
 
 .header{
-    min-height: 100vh;
+    min-height: 70vh;
     width: 100%;
-
+    background-image: url("nxt-museum-in-noord-richt-zich-op-de-nieuwe-generatie.jpg" );
     background-position: center;
     background-size: cover;
     position: relative
@@ -48,13 +141,93 @@ nav img{
     width: 125px;
 }
 
-/* .nav-links{
-   
+.nav-links{
+    
     text-align: right;
-} */
+}
 
 .nav-link ul li{
     list-style: none;
     display: inline-block;
-    /* position:relative; */
+    position:relative;
+}
+
+.nav-link ul li a{
+    color: darkgray;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+.nav-link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f1f1f1;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    color: white;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    color: gray;
+    text-shadow: -1px 1px 2px #000,
+                1px 2px 6px #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+    font-family: 'Instrument Serif', serif;
+
+}
+.text-box p{
+    color: lightgray;
+    margin: 10px 0 5px;
+    font-size: 16px;
+    text-shadow: -1px 1px 2px #000,
+                1px 2px 6px #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+                font-family: 'Fjalla One', sans-serif;
+}
+.Nxtlink{
+    display: inline-block;
+    text-decoration: none;
+    color: azure;
+    border: 2px solid lightgrey;
+    padding: 14px 40px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    transition: 1s;
+    text-shadow: -1px 1px 2px #000,
+                1px 2px 6px #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+}
+
+.Nxtlink:hover{
+    border: 2px solid white;
+    background: white;
+    color: #000 ;
+    text-shadow: -1px 1px 2px azure,
+                1px 2px 6px azure,
+                1px -1px 0 azure,
+                -1px -1px 0 azure;
+}
+
+@media(max-width: 700px){
+    nav img{
+        width: 90px;
+    }
+
 }
