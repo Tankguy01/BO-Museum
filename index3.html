@@ -11,18 +11,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="translate"><a href="index6.html"><img src="27104.png" alt="Translation"></a></div>
     <section class="header">
         <nav>
             <a href="index.html"><img src="download.png"></a>
-            <div class="nav-link">
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">MENU</a></li>
-                <li><a href="">SEARCH</a></li>
-            </ul>
-            </div>
         </nav>
-
+        <nav>
+            <div class="navbar">
+              <div class="container nav-container">
+                  <input class="checkbox" type="checkbox" name="" id="" />
+                  <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                  </div>  
+                <div class="logo">
+                </div>
+                <div class="menu-items">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">about</a></li>
+                  <li><a href="">Search</a></li>
+                  <li><a href="">contact</a></li>
+                </div>
+              </div>
+            </div>
+          </nav>
 <div class="text-box">
     <h1>Nxt-museum</h1>
     <p>see the way to the future at nxt museum, exciting exhibition's and dazling new technology.</p>
@@ -33,7 +46,7 @@
     </section>
     <article class="entre" onclick="E_Showinfo()">
         <a href="index.html"><h1><br><br>Who are we</h1></a>
-        <P><br><br>
+        <P id="invisible"><br><br>
             Nxt Museum is the first museum in the Netherlands 
             dedicated to new media art.<br>focus on art that 
             uses modern tools to embody modern times.<br>We 
@@ -66,5 +79,56 @@
             opened its doors on August 29, 2020. With a three-part program consisting of exhibitions,
             performances and education, Nxt Museum brings art and technology together with the focus on 'what is next'.</p>
     </article>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="Location">
+                        <h3>Location</h3>
+                        <ul>
+                            <li><a href="#">Nxt Museum</a></li>
+                            <li><a href="#">Asterweg 22</a></li>
+                            <li><a href="#">1031HP Amsterdam</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h3>contact</h3>
+                        <ul>
+                            <li><a href="https://www.instagram.com/nxtmuseum/">Instagram</a></li>
+                            <li><a href="https://twitter.com/nxtmuseum">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="OpeningsTijden">
+                        <h3>OpeningsTijden</h3>
+                    <ul>
+                        <li><a>maandag    11:00–20:30</a></li>
+                        <li><a>dinsdag    11:00–20:30</a></li>
+                        <li><a>woensdag    11:00–21:30</a></li>
+                        <li><a>donderdag    11:00–22:30</a></li>
+                        <li><a>vrijdag    11:00–22:30</a></li>
+                        <li><a>zaterdag    11:00–22:30</a></li>
+                        <li><a>zondag    11:00–20:30</a></li>
+                    </ul>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">Company Name © 2018</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
+
+
+<script>
+    $(function() {
+        $("#visible").click(function(){
+            $('#invisible').toggleClass("show");
+        });
+    });
+</script>
+
+
+</html>
 
